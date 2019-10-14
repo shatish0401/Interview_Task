@@ -60,6 +60,8 @@ public class testCase {
 			j++;
 		}
 		Assert.assertEquals(totalPageCount, allElement.size());
+		
+		
 		driver.quit();
 	}
 

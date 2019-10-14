@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8354" started-at="2019-10-12T09:54:51Z" finished-at="2019-10-12T09:54:59Z">
+  <suite started-at="2019-10-14T13:17:16Z" name="Default suite" finished-at="2019-10-14T13:17:36Z" duration-ms="19848">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8354" started-at="2019-10-12T09:54:51Z" finished-at="2019-10-12T09:54:59Z">
-      <class name="com.Interview.TestCases.testCase">
-        <test-method status="PASS" signature="FlipkartTest1()[pri:0, instance:com.Interview.TestCases.testCase@14acaea5]" name="FlipkartTest1" duration-ms="8297" started-at="2019-10-12T09:54:51Z" finished-at="2019-10-12T09:54:59Z">
+    <test started-at="2019-10-14T13:17:16Z" name="Default test" finished-at="2019-10-14T13:17:36Z" duration-ms="19848">
+      <class name="com.Interview.TestCases.AirAsia">
+        <test-method signature="AirAsia()[pri:0, instance:com.Interview.TestCases.AirAsia@5ea434c8]" started-at="2019-10-14T13:17:16Z" name="AirAsia" finished-at="2019-10-14T13:17:36Z" duration-ms="19830" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FlipkartTest1 -->
-      </class> <!-- com.Interview.TestCases.testCase -->
+        </test-method> <!-- AirAsia -->
+      </class> <!-- com.Interview.TestCases.AirAsia -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
