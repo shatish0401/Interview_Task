@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-15T07:00:28Z" name="Default suite" finished-at="2019-10-15T07:01:00Z" duration-ms="32436">
+  <suite started-at="2019-10-15T07:54:55Z" name="Default suite" finished-at="2019-10-15T07:55:36Z" duration-ms="40660">
     <groups>
     </groups>
-    <test started-at="2019-10-15T07:00:28Z" name="Default test" finished-at="2019-10-15T07:01:00Z" duration-ms="32436">
+    <test started-at="2019-10-15T07:54:55Z" name="Default test" finished-at="2019-10-15T07:55:36Z" duration-ms="40660">
       <class name="com.Interview.TestCases.AirAsia">
-        <test-method signature="AirAsia()[pri:0, instance:com.Interview.TestCases.AirAsia@5ea434c8]" started-at="2019-10-15T07:00:28Z" name="AirAsia" finished-at="2019-10-15T07:01:00Z" duration-ms="32418" status="PASS">
+        <test-method signature="AirAsia()[pri:0, instance:com.Interview.TestCases.AirAsia@5ea434c8]" started-at="2019-10-15T07:54:56Z" name="AirAsia" finished-at="2019-10-15T07:55:36Z" duration-ms="40643" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AirAsia -->
