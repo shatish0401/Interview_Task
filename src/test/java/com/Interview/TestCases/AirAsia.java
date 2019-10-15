@@ -14,14 +14,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AirAsia {
-	
-	
+
 	@Test
 	public static void AirAsia() throws InterruptedException {
 
-//		final String fromLocation = "Brunei";
-//		final String toLocation = "Da Nang";
-		
+		final String fromLocation = "Brunei";
+		final String toLocation = "Bali";
+
 		System.setProperty("webdriver.chrome.driver",
 				System.getProperty("user.dir") + "/src/test/resources/Lib/chromedriver");
 		WebDriver driver = new ChromeDriver();
@@ -39,12 +38,12 @@ public class AirAsia {
 
 		List<WebElement> FromLocation = driver
 				.findElements(By.xpath("//li[contains(@id,'home-origin-autocomplete-heatmaplist')]/span[2]"));
-		
+
 		Thread.sleep(1000);
-		
+
 		for (WebElement x : FromLocation) {
 
-			if (x.getText().equals("Brunei")) {
+			if (x.getText().equals(fromLocation)) {
 				x.click();
 				break;
 			}
@@ -59,7 +58,7 @@ public class AirAsia {
 				.findElements(By.xpath("//li[@class='ng-tns-c44-3 ng-star-inserted']/span[2]"));
 
 		for (WebElement y : Tolocation) {
-			if (y.getText().equals("Bali")) {
+			if (y.getText().equals(toLocation)) {
 				y.click();
 				break;
 			}
@@ -67,8 +66,10 @@ public class AirAsia {
 
 		driver.findElement(By.xpath("//label[@for='trip-oneway']")).click();
 
-		//Table 
-		
+		Thread.sleep(1000);
+
+		// Table
+
 //		SimpleDateFormat sim =new SimpleDateFormat("d");
 //		Date date = new Date();
 //		String today = sim.format(date);
@@ -76,39 +77,65 @@ public class AirAsia {
 //		int j = today_Date+2;
 //		int k = 1;
 //		String xpath = "//div[text()='"+j+"']"+"["+k+"]";
+
+//		List<WebElement> allDates = driver.findElements(By.xpath("//div[@class = 'date-item']"));
+//
+//		for(int i= 0 ; i<allDates.size();i++) {
+//			if(allDates.get(i).isEnabled()) {
+//				i = i+2;
+//				System.out.println(allDates.get(i).getText());
+//				allDates.get(i).click();
+//				break;
+//			}
+//		}
+
+//		List<WebElement> enabledDates = driver.findElements(
+//				By.xpath("//td[contains(@class, 'date ng-tns-c45-4 available ng-star-inserted')]"));
+//		System.out.println(enabledDates.get(10).getText());
+//		enabledDates.get(10).click();
+//
+//		Thread.sleep(1000);
+
+		//div[1]
+//		for (WebElement x : enabledDates) {
+//			System.out.println(x.getText());
+//
+//		}
 		
-		 driver.findElement(By.xpath("//div[text()='16']")).click();
-		
+
+		driver.findElement(By.xpath("//div[text()='18']")).click();
+
 		driver.findElement(By.xpath("//button[text()=' Confirm ']")).click();
-		
+
 		driver.findElement(By.id("home-flight-search-airasia-button-inner-button-select-flight-heatmap")).click();
-		
+
 		Thread.sleep(5000);
-		
-		String price = driver.findElement(By.xpath("//div[@class='fare-price-select-container']/div/div/span")).getText();
+
+		String price = driver.findElement(By.xpath("//div[@class='fare-price-select-container']/div/div/span"))
+				.getText();
 		Float adultprice = Float.parseFloat(price);
-	
-		//verification print  
+
+		// verification print
 		System.out.println(price);
-		
+
 		Assert.assertEquals(price, driver.findElement(By.id("amount-text")).getText());
-		
+
 		driver.findElement(By.xpath("//button[text()=' Continue ']")).click();
-		
+
 		driver.findElement(By.xpath("//button[text()=' Continue ']")).click();
-		
+
 		Thread.sleep(1000);
-		
+
 		driver.findElement(By.xpath("//span[@class='icon-infant icon-item-infant']")).click();
-		
+
 		String HikedPrice = driver.findElement(By.id("amount-text")).getText();
-		
+
 		String HikedPriceTrim = HikedPrice.trim();
 		float hikedPriceFloat = Float.parseFloat(HikedPriceTrim);
 		System.out.println(hikedPriceFloat);
-		float hike = hikedPriceFloat-adultprice;
-		System.out.println("The hiked price when the infant added is : "+hike);
-		
+		float hike = hikedPriceFloat - adultprice;
+		System.out.println("The hiked price when the infant added is : " + hike);
+
 		driver.quit();
 	}
 
