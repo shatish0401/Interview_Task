@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-15T07:54:55Z" name="Default suite" finished-at="2019-10-15T07:55:36Z" duration-ms="40660">
+  <suite started-at="2019-10-17T10:22:12Z" name="Default suite" finished-at="2019-10-17T10:22:24Z" duration-ms="12300">
     <groups>
     </groups>
-    <test started-at="2019-10-15T07:54:55Z" name="Default test" finished-at="2019-10-15T07:55:36Z" duration-ms="40660">
-      <class name="com.Interview.TestCases.AirAsia">
-        <test-method signature="AirAsia()[pri:0, instance:com.Interview.TestCases.AirAsia@5ea434c8]" started-at="2019-10-15T07:54:56Z" name="AirAsia" finished-at="2019-10-15T07:55:36Z" duration-ms="40643" status="PASS">
+    <test started-at="2019-10-17T10:22:12Z" name="Default test" finished-at="2019-10-17T10:22:24Z" duration-ms="12300">
+      <class name="com.Interview.TestCases.JcPenny">
+        <test-method signature="JcPennytest()[pri:0, instance:com.Interview.TestCases.JcPenny@568bf312]" started-at="2019-10-17T10:22:12Z" name="JcPennytest" finished-at="2019-10-17T10:22:24Z" duration-ms="12282" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AirAsia -->
-      </class> <!-- com.Interview.TestCases.AirAsia -->
+        </test-method> <!-- JcPennytest -->
+      </class> <!-- com.Interview.TestCases.JcPenny -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
