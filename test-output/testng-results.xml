@@ -1,17 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-17T10:22:12Z" name="Default suite" finished-at="2019-10-17T10:22:24Z" duration-ms="12300">
+  <suite started-at="2019-10-21T09:08:37Z" name="Default suite" finished-at="2019-10-21T09:08:52Z" duration-ms="15252">
     <groups>
     </groups>
-    <test started-at="2019-10-17T10:22:12Z" name="Default test" finished-at="2019-10-17T10:22:24Z" duration-ms="12300">
-      <class name="com.Interview.TestCases.JcPenny">
-        <test-method signature="JcPennytest()[pri:0, instance:com.Interview.TestCases.JcPenny@568bf312]" started-at="2019-10-17T10:22:12Z" name="JcPennytest" finished-at="2019-10-17T10:22:24Z" duration-ms="12282" status="PASS">
+    <test started-at="2019-10-21T09:08:37Z" name="Default test" finished-at="2019-10-21T09:08:52Z" duration-ms="15252">
+      <class name="com.Interview.TestCases.Amazon">
+        <test-method signature="mobileSearch()[pri:0, instance:com.Interview.TestCases.Amazon@568bf312]" started-at="2019-10-21T09:08:37Z" name="mobileSearch" finished-at="2019-10-21T09:08:52Z" duration-ms="15232" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Saadhvi-Testing', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.0.0-31-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.UyoEUw}, goog:chromeOptions: {debuggerAddress: localhost:40367}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a98b1d30dc55b484fe07b953b29e77de]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']], [[ChromeDriver: chrome on LINUX (a98b1d30dc55b484fe07b953b29e77de)] -> xpath: //*[@data-alias='aps']]] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Saadhvi-Testing', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '5.0.0-31-generic', java.version: '11.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.90, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /tmp/.com.google.Chrome.UyoEUw}, goog:chromeOptions: {debuggerAddress: localhost:40367}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a98b1d30dc55b484fe07b953b29e77de
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.Interview.TestCases.Amazon.mobileSearch(Amazon.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- JcPennytest -->
-      </class> <!-- com.Interview.TestCases.JcPenny -->
+        </test-method> <!-- mobileSearch -->
+      </class> <!-- com.Interview.TestCases.Amazon -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
